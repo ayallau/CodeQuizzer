@@ -1,0 +1,70 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# =====================
+# Angular - Client Side
+# =====================
+
+/Client/dist
+/Client/tmp
+/Client/out-tsc
+/Client/bazel-out
+
+/Client/node_modules
+/Client/npm-debug.log
+/Client/yarn-error.log
+
+/Client/.idea/
+/Client/.project
+/Client/.classpath
+/Client/.c9/
+/Client/*.launch
+/Client/.settings/
+/Client/*.sublime-workspace
+
+# VSCode settings
+/Client/.vscode/*
+!/Client/.vscode/settings.json
+!/Client/.vscode/tasks.json
+!/Client/.vscode/launch.json
+!/Client/.vscode/extensions.json
+/Client/.history/*
+
+# Misc
+/Client/.angular/cache
+/Client/.sass-cache/
+/Client/connect.lock
+/Client/coverage
+/Client/libpeerconnection.log
+/Client/testem.log
+/Client/typings
+
+# System
+/Client/.DS_Store
+/Client/Thumbs.db
+
+# =====================
+# Python - Server Side
+# =====================
+
+/Server/__pycache__/
+/Server/*.pyc
+/Server/*.pyo
+/Server/*.pyd
+/Server/.Python
+/Server/env/
+/Server/venv/
+/Server/.env
+/Server/.venv/
+/Server/.vscode/
+/Server/.idea/
+/Server/.mypy_cache/
+/Server/.pytest_cache/
+/Server/.DS_Store
+/Server/db.sqlite3
+
+/Server/*.log
+
+/Server/build/
+/Server/dist/
+/Server/*.spec
+
