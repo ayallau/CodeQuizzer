@@ -68,3 +68,9 @@
 /Server/dist/
 /Server/*.spec
 
+
+# =====================
+# CodeQuizzer - Root
+# =====================
+
+/cleanup_git.bat
