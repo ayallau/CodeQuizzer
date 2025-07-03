@@ -4,73 +4,77 @@
 # Angular - Client Side
 # =====================
 
-/Client/dist
-/Client/tmp
-/Client/out-tsc
-/Client/bazel-out
+# Compiled output
+/Client/CodeQuizzer/dist
+/Client/CodeQuizzer/tmp
+/Client/CodeQuizzer/out-tsc
+/Client/CodeQuizzer/bazel-out
 
-/Client/node_modules
-/Client/npm-debug.log
-/Client/yarn-error.log
+# Node
+/Client/CodeQuizzer/node_modules
+/Client/CodeQuizzer/npm-debug.log
+/Client/CodeQuizzer/yarn-error.log
 
-/Client/.idea/
-/Client/.project
-/Client/.classpath
-/Client/.c9/
-/Client/*.launch
-/Client/.settings/
-/Client/*.sublime-workspace
+# IDEs and editors
+/Client/CodeQuizzer/.idea/
+/Client/CodeQuizzer/.project
+/Client/CodeQuizzer/.classpath
+/Client/CodeQuizzer/.c9/
+/Client/CodeQuizzer/*.launch
+/Client/CodeQuizzer/.settings/
+/Client/CodeQuizzer/*.sublime-workspace
 
-# VSCode settings
-/Client/.vscode/*
-!/Client/.vscode/settings.json
-!/Client/.vscode/tasks.json
-!/Client/.vscode/launch.json
-!/Client/.vscode/extensions.json
-/Client/.history/*
+# Visual Studio Code
+/Client/CodeQuizzer/.vscode/*
+!/Client/CodeQuizzer/.vscode/settings.json
+!/Client/CodeQuizzer/.vscode/tasks.json
+!/Client/CodeQuizzer/.vscode/launch.json
+!/Client/CodeQuizzer/.vscode/extensions.json
+/Client/CodeQuizzer/.history/*
 
-# Misc
-/Client/.angular/cache
-/Client/.sass-cache/
-/Client/connect.lock
-/Client/coverage
-/Client/libpeerconnection.log
-/Client/testem.log
-/Client/typings
+# Miscellaneous
+/Client/CodeQuizzer/.angular/cache
+/Client/CodeQuizzer/.sass-cache/
+/Client/CodeQuizzer/connect.lock
+/Client/CodeQuizzer/coverage
+/Client/CodeQuizzer/libpeerconnection.log
+/Client/CodeQuizzer/testem.log
+/Client/CodeQuizzer/typings
 
-# System
-/Client/.DS_Store
-/Client/Thumbs.db
+# System files
+/Client/CodeQuizzer/.DS_Store
+/Client/CodeQuizzer/Thumbs.db
 
 # =====================
 # Python - Server Side
 # =====================
 
-/Server/__pycache__/
-/Server/*.pyc
-/Server/*.pyo
-/Server/*.pyd
-/Server/.Python
-/Server/env/
-/Server/venv/
-/Server/.env
-/Server/.venv/
-/Server/.vscode/
-/Server/.idea/
-/Server/.mypy_cache/
-/Server/.pytest_cache/
-/Server/.DS_Store
-/Server/db.sqlite3
+/Server/CodeQuizzerApi/__pycache__/
+/Server/CodeQuizzerApi/*.pyc
+/Server/CodeQuizzerApi/*.pyo
+/Server/CodeQuizzerApi/*.pyd
+/Server/CodeQuizzerApi/.Python
+/Server/CodeQuizzerApi/env/
+/Server/CodeQuizzerApi/venv/
+/Server/CodeQuizzerApi/.env
+/Server/CodeQuizzerApi/.venv/
+/Server/CodeQuizzerApi/.vscode/
+/Server/CodeQuizzerApi/.idea/
+/Server/CodeQuizzerApi/.mypy_cache/
+/Server/CodeQuizzerApi/.pytest_cache/
+/Server/CodeQuizzerApi/.DS_Store
+/Server/CodeQuizzerApi/db.sqlite3
 
-/Server/*.log
+/Server/CodeQuizzerApi/*.log
 
-/Server/build/
-/Server/dist/
-/Server/*.spec
+/Server/CodeQuizzerApi/build/
+/Server/CodeQuizzerApi/dist/
+/Server/CodeQuizzerApi/*.spec
 
 
 # =====================
 # CodeQuizzer - Root
 # =====================
 
+/old_versions/
 /*.bat
