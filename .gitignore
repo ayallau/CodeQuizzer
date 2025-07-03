@@ -4,15 +4,18 @@
 # Angular - Client Side
 # =====================
 
+# Compiled output
 /Client/CodeQuizzer/dist
 /Client/CodeQuizzer/tmp
 /Client/CodeQuizzer/out-tsc
 /Client/CodeQuizzer/bazel-out
 
+# Node
 /Client/CodeQuizzer/node_modules
 /Client/CodeQuizzer/npm-debug.log
 /Client/CodeQuizzer/yarn-error.log
 
+# IDEs and editors
 /Client/CodeQuizzer/.idea/
 /Client/CodeQuizzer/.project
 /Client/CodeQuizzer/.classpath
@@ -21,7 +24,7 @@
 /Client/CodeQuizzer/.settings/
 /Client/CodeQuizzer/*.sublime-workspace
 
-# VSCode settings
+# Visual Studio Code
 /Client/CodeQuizzer/.vscode/*
 !/Client/CodeQuizzer/.vscode/settings.json
 !/Client/CodeQuizzer/.vscode/tasks.json
@@ -29,7 +32,7 @@
 !/Client/CodeQuizzer/.vscode/extensions.json
 /Client/CodeQuizzer/.history/*
 
-# Misc
+# Miscellaneous
 /Client/CodeQuizzer/.angular/cache
 /Client/CodeQuizzer/.sass-cache/
 /Client/CodeQuizzer/connect.lock
@@ -38,7 +41,7 @@
 /Client/CodeQuizzer/testem.log
 /Client/CodeQuizzer/typings
 
-# System
+# System files
 /Client/CodeQuizzer/.DS_Store
 /Client/CodeQuizzer/Thumbs.db
 
