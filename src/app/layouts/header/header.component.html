@@ -1,0 +1,18 @@
+<header class="header">
+    <div class="header-title">
+        <!-- Logo: redirects to welcome (not connected) or dashboard (connected) -->
+        <a [routerLink]="isConnected ? '/dashboard' : '/'" class="logo-link">
+            <img src="assets/logo/Icon_64.png" alt="CodeQuizzer Logo" class="logo" />
+        </a>
+        <span class="app-title">CodeQuizzer</span>
+    </div>
+    <div class="header-user">
+        <!-- Not Connected: Show Login button -->
+        <button *ngIf="!isConnected" class="login-btn" routerLink="/login">Login</button>
+        <!-- Connected: Show Profile and Logout buttons -->
+        <ng-container *ngIf="isConnected">
+            <button class="profile-btn" routerLink="/profile">{{ userName }}</button>
+            <button class="logout-btn" (click)="logout()">Logout</button>
+        </ng-container>
+    </div>
+</header>

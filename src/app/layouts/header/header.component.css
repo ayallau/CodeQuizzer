@@ -1,0 +1,107 @@
+/* Header Container */
+.header {
+    height: var(--header-height);
+    min-height: var(--header-height);
+    max-height: var(--header-height);
+    width: 100%;
+    background: rgb(230, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    box-sizing: border-box;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #2d3a4b;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    transition: transform 0.2s;
+}
+
+.logo-link:hover .logo {
+    transform: scale(1.07);
+}
+
+.app-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3a4b;
+    margin-left: 0.5rem;
+}
+
+
+/* Buttons */
+
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-right: 0.2rem;
+}
+
+.login-btn {
+    background: #fff;
+    color: #2d3a4b;
+    font-weight: 600;
+}
+
+.login-btn:hover {
+    background: #e0e7ef;
+}
+
+.profile-btn {
+    background: #4e5d6c;
+    color: #fff;
+    font-weight: 500;
+}
+
+.profile-btn:hover {
+    background: #6c7a89;
+}
+
+.logout-btn {
+    background: #e74c3c;
+    color: #fff;
+    font-weight: 500;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+
+
+/* @media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.5rem 1rem;
+    }
+
+    .header-left,
+    .header-right {
+        justify-content: center;
+        margin: 0.2rem 0;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.95rem;
+    }
+} */

@@ -5,72 +5,48 @@
 # =====================
 
 # Compiled output
-/Client/CodeQuizzer/dist
-/Client/CodeQuizzer/tmp
-/Client/CodeQuizzer/out-tsc
-/Client/CodeQuizzer/bazel-out
+/dist
+/tmp
+/out-tsc
+/bazel-out
 
 # Node
-/Client/CodeQuizzer/node_modules
-/Client/CodeQuizzer/npm-debug.log
-/Client/CodeQuizzer/yarn-error.log
+/node_modules
+/npm-debug.log
+/yarn-error.log
 
 # IDEs and editors
-/Client/CodeQuizzer/.idea/
-/Client/CodeQuizzer/.project
-/Client/CodeQuizzer/.classpath
-/Client/CodeQuizzer/.c9/
-/Client/CodeQuizzer/*.launch
-/Client/CodeQuizzer/.settings/
-/Client/CodeQuizzer/*.sublime-workspace
+/.idea/
+/.project
+/.classpath
+/.c9/
+/*.launch
+/.settings/
+/*.sublime-workspace
 
 # Visual Studio Code
-/Client/CodeQuizzer/.vscode/*
-!/Client/CodeQuizzer/.vscode/settings.json
-!/Client/CodeQuizzer/.vscode/tasks.json
-!/Client/CodeQuizzer/.vscode/launch.json
-!/Client/CodeQuizzer/.vscode/extensions.json
-/Client/CodeQuizzer/.history/*
+/.vscode/*
+!/.vscode/settings.json
+!/.vscode/tasks.json
+!/.vscode/launch.json
+!/.vscode/extensions.json
+/.history/*
 
 # Miscellaneous
-/Client/CodeQuizzer/.angular/cache
-/Client/CodeQuizzer/.sass-cache/
-/Client/CodeQuizzer/connect.lock
-/Client/CodeQuizzer/coverage
-/Client/CodeQuizzer/libpeerconnection.log
-/Client/CodeQuizzer/testem.log
-/Client/CodeQuizzer/typings
+/.angular/cache
+/.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+/testem.log
+/typings
 
 # System files
-/Client/CodeQuizzer/.DS_Store
-/Client/CodeQuizzer/Thumbs.db
+/.DS_Store
+/Thumbs.db
 
-# =====================
-# Python - Server Side
-# =====================
-
-/Server/CodeQuizzerApi/__pycache__/
-/Server/CodeQuizzerApi/*.pyc
-/Server/CodeQuizzerApi/*.pyo
-/Server/CodeQuizzerApi/*.pyd
-/Server/CodeQuizzerApi/.Python
-/Server/CodeQuizzerApi/env/
-/Server/CodeQuizzerApi/venv/
-/Server/CodeQuizzerApi/.env
-/Server/CodeQuizzerApi/.venv/
-/Server/CodeQuizzerApi/.vscode/
-/Server/CodeQuizzerApi/.idea/
-/Server/CodeQuizzerApi/.mypy_cache/
-/Server/CodeQuizzerApi/.pytest_cache/
-/Server/CodeQuizzerApi/.DS_Store
-/Server/CodeQuizzerApi/db.sqlite3
-
-/Server/CodeQuizzerApi/*.log
-
-/Server/CodeQuizzerApi/build/
-/Server/CodeQuizzerApi/dist/
-/Server/CodeQuizzerApi/*.spec
-
+# .env files
+/.env
 
 # =====================
 # CodeQuizzer - Root
