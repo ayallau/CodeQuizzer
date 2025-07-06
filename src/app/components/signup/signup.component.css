@@ -36,3 +36,8 @@
 .signup-container button:hover {
     background: var(--primary-color-hover);
 }
+
+.signup-links p {
+    text-align: center;
+    margin: 10px 0;
+}

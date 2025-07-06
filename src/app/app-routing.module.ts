@@ -5,6 +5,7 @@ import { WelcomePageComponent } from './pages/welcome-page/welcome-page.componen
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
+import { ResetPasswordPageComponent } from './pages/reset-password-page/reset-password-page.component';
 
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 
@@ -14,9 +15,10 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       { path: '', component: WelcomePageComponent },
-      { path: 'login', component: LoginPageComponent },
+      { path: 'login', component: WelcomePageComponent }, // Redirect to welcome page for login
       { path: 'dashboard', component: DashboardPageComponent },
-      { path: 'signup', component: SignupPageComponent }
+      { path: 'signup', component: SignupPageComponent },
+      { path: 'reset-password', component: ResetPasswordPageComponent }
     ]
   },
   { path: '**', redirectTo: '' }

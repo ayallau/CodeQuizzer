@@ -16,6 +16,8 @@ import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.co
 import { LoginComponent } from './components/login/login.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import { ResetPasswordPageComponent } from './pages/reset-password-page/reset-password-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { SignupComponent } from './components/signup/signup.component';
     DashboardPageComponent,
     LoginComponent,
     SignupPageComponent,
-    SignupComponent
+    SignupComponent,
+    ResetPasswordComponent,
+    ResetPasswordPageComponent
   ],
   imports: [
     BrowserModule,
