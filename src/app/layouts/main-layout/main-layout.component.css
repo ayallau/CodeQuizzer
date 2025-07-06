@@ -1,13 +1,21 @@
+/*Main Container*/
 :host {
     display: flex;
     flex-direction: column;
+    height: var(--main-layout-min-height, 100vh);
+    width: 100%;
+    overflow: hidden;
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
-    height: var(--main-layout-min-height);
-    min-height: 64px;
-    box-sizing: border-box;
+    justify-content: flex-start;
+    /* תמיד מתחיל למעלה */
+    align-items: center;
+    flex: 1 1 0;
+    height: 100%;
     padding: 1rem;
+    box-sizing: border-box;
+    overflow: auto;
 }

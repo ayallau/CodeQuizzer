@@ -1,0 +1,38 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    flex: 1;
+    gap: 50px;
+    /* min-height: 50vh;
+    margin-top: auto;
+    margin-bottom: auto; */
+}
+
+.welcome-logo img {
+    width: 300px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.welcome-title h1 {
+    text-align: center;
+    font-size: 2.7rem;
+    line-height: 1.1;
+    word-break: break-word;
+}
+
+@media screen and (max-width: 600px) {
+    .welcome-logo img {
+        width: 300px;
+        max-height: 40vh;
+    }
+
+    .welcome-title h1 {
+        font-size: 2rem;
+    }
+
+}
