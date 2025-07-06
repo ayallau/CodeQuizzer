@@ -10,7 +10,7 @@
         <!-- Not Connected: Show Login button -->
         <!-- <button *ngIf="!isConnected" class="login-btn" routerLink="/login">Login</button> -->
         <!-- Not Connected: Show "Not Logged In" text -->
-        <span *ngIf="!isConnected">Disconnected</span>
+        <span class="disconnected-text" *ngIf="!isConnected">Disconnected</span>
         <!-- Connected: Show Profile and Logout buttons -->
         <ng-container *ngIf="isConnected">
             <button class="profile-btn" routerLink="/profile">{{ userName }}</button>

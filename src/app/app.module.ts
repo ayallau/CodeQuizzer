@@ -14,6 +14,8 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 
 import { LoginComponent } from './components/login/login.component';
+import { SignupPageComponent } from './pages/signup-page/signup-page.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { LoginComponent } from './components/login/login.component';
     WelcomePageComponent,
     LoginPageComponent,
     DashboardPageComponent,
-    LoginComponent
+    LoginComponent,
+    SignupPageComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

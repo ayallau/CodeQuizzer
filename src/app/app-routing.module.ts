@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
+import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 
@@ -15,6 +16,7 @@ const routes: Routes = [
       { path: '', component: WelcomePageComponent },
       { path: 'login', component: LoginPageComponent },
       { path: 'dashboard', component: DashboardPageComponent },
+      { path: 'signup', component: SignupPageComponent }
     ]
   },
   { path: '**', redirectTo: '' }

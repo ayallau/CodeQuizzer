@@ -82,6 +82,12 @@ button {
 }
 
 
+@media (max-width: 350px) {
+    .disconnected-text {
+        display: none;
+    }
+
+}
 
 /* @media (max-width: 600px) {
     .header {
