@@ -1,21 +1,21 @@
 <header class="header">
     <div class="header-title">
         <!-- Logo: redirects to welcome (not connected) or dashboard (connected) -->
-        <a class="logo-link" [routerLink]="isConnected ? '/dashboard' : '/'">
+        <a class="logo-link" [routerLink]="isLoggedIn  ? '/dashboard' : '/'">
             <img class="logo" src="assets/Icon_64.png" alt="CodeQuizzer Icon" />
         </a>
         <span class="app-title">CodeQuizzer</span>
     </div>
     <div class="header-user">
         <!-- Not Connected: Show Login button -->
-        <!-- <button *ngIf="!isConnected" class="login-btn" routerLink="/login">Login</button> -->
+        <!-- <button *ngIf="!isLoggedIn " class="login-btn" routerLink="/login">Login</button> -->
         <!-- Not Connected: Show "Not Logged In" text -->
-        <span class="disconnected-text" *ngIf="!isConnected">Disconnected</span>
+        <span class="login-status" *ngIf="!isLoggedIn ">Not Logged In</span>
         <!-- Connected: Show Profile and Logout buttons -->
-        <ng-container *ngIf="isConnected">
+        <ng-container *ngIf="isLoggedIn ">
             <button class="profile-btn" routerLink="/profile">{{ userName }}</button>
             <button class="logout-btn" (click)="logout()">Logout</button>
         </ng-container>
     </div>
-    <!-- <div *ngIf="!isConnected" class="header-disconnected"></div> -->
+    <!-- <div *ngIf="!isLoggedIn " class="header-disconnected"></div> -->
 </header>

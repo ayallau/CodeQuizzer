@@ -10,14 +10,16 @@ import { HeaderComponent } from './layouts/header/header.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
-import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { LoginPageComponent } from './pages/auth/login-page/login-page.component';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 
-import { LoginComponent } from './components/login/login.component';
-import { SignupPageComponent } from './pages/signup-page/signup-page.component';
-import { SignupComponent } from './components/signup/signup.component';
-import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
-import { ResetPasswordPageComponent } from './pages/reset-password-page/reset-password-page.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { SignupPageComponent } from './pages/auth/signup-page/signup-page.component';
+import { SignupComponent } from './components/auth/signup/signup.component';
+import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
+import { ResetPasswordPageComponent } from './pages/auth/reset-password-page/reset-password-page.component';
+
+import { UserInfoComponent } from './components/user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { ResetPasswordPageComponent } from './pages/reset-password-page/reset-pa
     SignupComponent,
     ResetPasswordComponent,
     ResetPasswordPageComponent
+    , UserInfoComponent
   ],
   imports: [
     BrowserModule,

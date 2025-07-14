@@ -6,19 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  isConnected = false; // TODO: Replace with real auth logic
+  isLoggedIn = false; // TODO: Replace with real auth logic
   userName = '';
 
   constructor() {
     // TODO: Replace with real user/auth service
     // Example mock logic:
-    // this.isConnected = AuthService.isLoggedIn();
+    // this.isLoggedIn  = AuthService.isLoggedIn();
     // this.userName = AuthService.getUserName();
   }
 
   logout() {
     // TODO: Implement logout logic and redirect to welcome page
-    this.isConnected = false;
+    this.isLoggedIn = false;
     this.userName = '';
     // Example: this.router.navigate(['/']);
   }
