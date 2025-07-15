@@ -1,0 +1,12 @@
+<div class="profile-page">
+    <div *ngIf="currentUser" class="user-profile">
+        <h2>User Profile</h2>
+        <div class="profile-info">
+            <p><strong>Username:</strong> {{ currentUser?.username }}</p>
+            <p><strong>Email:</strong> {{ currentUser?.email }}</p>
+        </div>
+    </div>
+    <div *ngIf="!currentUser" class="no-user">
+        <p>No user information available.</p>
+    </div>
+</div>

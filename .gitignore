@@ -1,19 +1,19 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 # =====================
-# Angular - Client Side
+# Angular - Frontend
 # =====================
 
 # Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+frontend/dist
+frontend/tmp
+frontend/out-tsc
+frontend/bazel-out
 
 # Node
-/node_modules
-/npm-debug.log
-/yarn-error.log
+frontend/node_modules
+frontend/npm-debug.log
+frontend/yarn-error.log
 
 # IDEs and editors
 /.idea/
@@ -33,20 +33,53 @@
 /.history/*
 
 # Miscellaneous
-/.angular/cache
-/.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-/testem.log
-/typings
+frontend/.angular/cache
+frontend/.sass-cache/
+frontend/connect.lock
+frontend/coverage
+frontend/libpeerconnection.log
+frontend/testem.log
+frontend/typings
+
+# =====================
+# Python - Backend
+# =====================
+
+# Virtual environments
+backend/venv/
+backend/env/
+backend/.venv/
+backend/.env/
+
+# Python cache
+backend/__pycache__/
+backend/*/__pycache__/
+backend/*/*/__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+backend/dist/
+backend/build/
+backend/*.egg-info/
+
+# Environment variables
+backend/.env
+backend/.env.local
+backend/.env.production
+
+# IDE
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+
+# =====================
+# System files
+# =====================
 
 # System files
 /.DS_Store
 /Thumbs.db
-
-# .env files
-/.env
 
 # =====================
 # CodeQuizzer - Root

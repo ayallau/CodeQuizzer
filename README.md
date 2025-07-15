@@ -1,27 +1,84 @@
 # CodeQuizzer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+A full-stack quiz application built with Angular (Frontend) and FastAPI + MongoDB (Backend).
 
-## Development server
+## Project Structure
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```
+CodeQuizzer/
+├── frontend/          # Angular application
+├── backend/           # FastAPI + MongoDB server
+└── README.md
+```
 
-## Code scaffolding
+## Quick Start
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
+- Node.js (for Angular)
+- Python 3.8+ (for FastAPI)
+- MongoDB
 
-## Build
+### Backend Setup
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Navigate to backend directory:
+```bash
+cd backend
+```
 
-## Running unit tests
+2. Install Python dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Create `.env` file:
+```env
+MONGO_URI=mongodb://localhost:27017
+DB_NAME=codequizzer
+```
 
-## Running end-to-end tests
+4. Start MongoDB (make sure it's running on localhost:27017)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+5. Run the backend server:
+```bash
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
 
-## Further help
+The backend will be available at `http://localhost:8000`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Frontend Setup
+
+1. Navigate to frontend directory:
+```bash
+cd frontend
+```
+
+2. Install Node.js dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm start
+```
+
+The frontend will be available at `http://localhost:4200`
+
+## API Documentation
+
+Visit `http://localhost:8000/docs` for interactive API documentation.
+
+## Features
+
+- User authentication (signup, login, logout)
+- User profile management
+- Simple session-based authentication
+- MongoDB database integration
+- Responsive Angular UI
+
+## Development
+
+- Backend: FastAPI with MongoDB (Beanie ODM)
+- Frontend: Angular 16 with TypeScript
+- Authentication: Simple session-based (localStorage)
+- Database: MongoDB
