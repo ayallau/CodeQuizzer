@@ -25,12 +25,22 @@
     word-break: break-word;
 }
 
-@media screen and (max-width: 600px) {
-    .welcome-logo img {
-        width: 300px;
-        max-height: 40vh;
+@media screen and (max-height: 720px) {
+    .welcome {
+        gap: 20px;
     }
 
+    .welcome-logo img {
+        width: 220px;
+    }
+
+    .welcome-title h1 {
+        font-size: 2rem;
+    }   
+
+}   
+
+@media screen and (max-width: 600px) {
     .welcome-title h1 {
         font-size: 2rem;
     }
