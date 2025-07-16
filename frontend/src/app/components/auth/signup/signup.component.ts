@@ -13,6 +13,7 @@ export class SignupComponent implements OnInit {
   isLoading = false;
   errorMessage = '';
 
+  // dependency injection
   constructor(
     private fb: FormBuilder,
     private authService: AuthService,

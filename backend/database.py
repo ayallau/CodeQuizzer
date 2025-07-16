@@ -6,6 +6,7 @@ from typing import cast
 import asyncio
 
 from models.user import User  # Load all your models here
+from models.topic import Topic
 load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI")
@@ -28,7 +29,10 @@ async def check_db_connection():
         return False
 
 async def init_db():
-    await init_beanie(database=client[DB_NAME], document_models=[User])
+    await init_beanie(database=client[DB_NAME], document_models=[User, Topic])
+
+def close_db():
+    client.close()
 
 # Synchronous check during module load (optional, but useful if you want to verify connection)
 if __name__ == "__main__":

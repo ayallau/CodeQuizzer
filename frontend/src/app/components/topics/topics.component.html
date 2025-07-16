@@ -1,0 +1,21 @@
+<div class="loading-state" *ngIf="isLoading">
+  <div class="loading-spinner"></div>
+  <p>Loading topics...</p>
+</div>
+
+<div class="error-state" *ngIf="error">
+  <i class="fa fa-exclamation-triangle"></i>
+  <p>{{ error }}</p>
+</div>
+
+<div class="topics-list" *ngIf="!isLoading && !error">
+  <div class="topic-item" *ngFor="let topic of topics">
+    <!-- <div class="topic-icon">
+      <i class="fa fa-lg" [ngClass]="'fa-' + topic.icon"></i>
+    </div> -->
+    <div class="topic-content">
+      <h3>{{ topic.title }}</h3>
+      <p>{{ topic.description }}</p>
+    </div>
+  </div>
+</div> 

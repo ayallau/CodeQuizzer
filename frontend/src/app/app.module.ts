@@ -22,6 +22,7 @@ import { ResetPasswordComponent } from './components/auth/reset-password/reset-p
 import { ResetPasswordPageComponent } from './pages/auth/reset-password-page/reset-password-page.component';
 
 import { UserInfoComponent } from './components/user-info/user-info.component';
+import { TopicsComponent } from './components/topics/topics.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { UserInfoComponent } from './components/user-info/user-info.component';
     SignupComponent,
     ResetPasswordComponent,
     ResetPasswordPageComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    TopicsComponent
   ],
   imports: [
     BrowserModule,

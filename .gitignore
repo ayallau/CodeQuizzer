@@ -87,3 +87,4 @@ backend/htmlcov/
 
 /old_versions/
 /*.bat
+/_devtools.txt

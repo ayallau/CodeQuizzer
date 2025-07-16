@@ -62,13 +62,17 @@ button {
 }
 
 .profile-btn {
-    background: #4e5d6c;
-    color: #fff;
+    color: #000000;
     font-weight: 500;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+
 }
 
 .profile-btn:hover {
-    background: #6c7a89;
+    color: #546172;
 }
 
 .logout-btn {

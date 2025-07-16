@@ -13,7 +13,7 @@
         <span class="login-status" *ngIf="!isLoggedIn ">Not Logged In</span>
         <!-- Connected: Show Profile and Logout buttons -->
         <ng-container *ngIf="isLoggedIn ">
-            <button class="profile-btn" routerLink="/profile">{{ userName }}</button>
+            <span class="profile-btn" routerLink="/profile">User Name: {{ userName }}</span>
             <button class="logout-btn" (click)="logout()">Logout</button>
         </ng-container>
     </div>

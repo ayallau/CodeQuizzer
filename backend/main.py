@@ -1,16 +1,22 @@
 from fastapi import FastAPI, HTTPException
-from database import init_db
+from database import init_db, close_db
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from models.user import User, UserCreate, UserResponse
 from pydantic import BaseModel
+from models.topic import Topic
+from typing import List
 
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await init_db()
+    print("Database initialized")
     yield
+    print("Database closed")
+    close_db()
+
     
 app = FastAPI(lifespan=lifespan)
 
@@ -126,4 +132,21 @@ async def get_profile(user_id: str):
 async def ping_db():
     count = await User.find_all().count()
     return {"users_in_db": count}
+
+
+
+# get topics
+@app.get("/api/topics", response_model=List[dict])
+async def get_topics():
+    topics = await Topic.find_all().to_list()
+    return [
+        {
+            "_id": str(topic.id),
+            "title": topic.title,
+            "description": topic.description,
+            "color": topic.color,
+            "icon": topic.icon
+        }
+        for topic in topics
+    ]
     
