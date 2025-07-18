@@ -24,6 +24,8 @@ mongosh # mongoDB Cli
 # Angular commands:
 ````bash
 
+cd frontend && npm install
+
 npm start
 npx ng build
 
@@ -39,6 +41,7 @@ npx ng g enum <enum_name>
 npx ng g service <service_name>
 
 ````
+
 # Git commands:
 ````bash
 git init # יצירת ריפוזיטורי חדש
@@ -48,6 +51,8 @@ git commit -m "commit message" # יצירת קומיט עם הודעה
 git push origin <branch_name> # דחיפת שינויים לסניף מרוחק
 git pull origin <branch_name> # משיכת שינויים מסניף מרוחק
 git branch <branch_name> # יצירת סניף חדש
+git switch <branch_name> # מעבר לסניף קיים
+git checkout -b <branch_name> # יצירת סניף חדש ומעבר אליו
 git checkout <branch_name> # מעבר לסניף אחר
 git merge <branch_name> # מיזוג סניף לתוך הסניף הנוכחי
 git status # בדיקת מצב הריפוזיטורי  
@@ -93,5 +98,4 @@ docker-compose port <service_name> <port> # הצגת פורט של שירות מ
 docker-compose up --build # בניית קונטיינרים והפעלתם
 docker-compose down --volumes # עצירת קונטיינרים ומחיקת וול
 ````
-
 
